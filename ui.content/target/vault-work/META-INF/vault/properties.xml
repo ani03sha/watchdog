@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>watchdog - UI content</comment>
+<entry key="createdBy">anirshar</entry>
+<entry key="name">watchdog.ui.content</entry>
+<entry key="created">2018-05-10T22:38:16.379+0530</entry>
+<entry key="groupId">org.anirudh.redquark</entry>
+<entry key="version">0.0.1-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">watchdog Content Package</entry>
+<entry key="description">UI content package for watchdog</entry>
+<entry key="artifactId">watchdog.ui.content</entry>
+<entry key="path">/etc/packages/watchdog Content Package/watchdog.ui.content.zip</entry>
+</properties>

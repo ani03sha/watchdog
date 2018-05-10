@@ -1,0 +1,9 @@
+org\anirudh\redquark\watchdog\core\impl\AEMWatchFolderImpl.class
+org\anirudh\redquark\watchdog\core\package-info.class
+org\anirudh\redquark\watchdog\core\schedulers\WatchedScheduler.class
+org\anirudh\redquark\watchdog\core\filters\LoggingFilter.class
+org\anirudh\redquark\watchdog\core\AEMWatchFolder.class
+org\anirudh\redquark\watchdog\core\models\HelloWorldModel.class
+org\anirudh\redquark\watchdog\core\schedulers\SimpleScheduledTask.class
+org\anirudh\redquark\watchdog\core\listeners\SimpleResourceListener.class
+org\anirudh\redquark\watchdog\core\servlets\SimpleServlet.class

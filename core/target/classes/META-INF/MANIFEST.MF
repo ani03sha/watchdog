@@ -1,0 +1,52 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1525977872681
+Build-Jdk: 1.8.0_171
+Built-By: anirshar
+Bundle-Description: Core bundle for watchdog
+Bundle-ManifestVersion: 2
+Bundle-Name: watchdog - Core
+Bundle-SymbolicName: org.anirudh.redquark.watchdog.core
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.anirudh.redquark.watchdog.core;version="1.0",org.ani
+ rudh.redquark.watchdog.core.filters;version="0.0.1";uses:="javax.servle
+ t",org.anirudh.redquark.watchdog.core.listeners;version="0.0.1";uses:="
+ org.osgi.service.event",org.anirudh.redquark.watchdog.core.models;versi
+ on="0.0.1";uses:="javax.annotation,javax.inject,org.apache.sling.api.re
+ source,org.apache.sling.models.annotations",org.anirudh.redquark.watchd
+ og.core.schedulers;version="0.0.1";uses:="org.anirudh.redquark.watchdog
+ .core",org.anirudh.redquark.watchdog.core.servlets;version="0.0.1";uses
+ :="javax.servlet,org.apache.sling.api,org.apache.sling.api.servlets"
+Import-Package: javax.inject;version="0.0.0",javax.annotation,javax.jcr;
+ version="[2.0,3)",javax.servlet,org.anirudh.redquark.watchdog.core;vers
+ ion="[1.0,1.1)",org.apache.sling.api;version="[2.3,3)",org.apache.sling
+ .api.request;version="[2.4,3)",org.apache.sling.api.resource;version="[
+ 2.5,3)",org.apache.sling.api.servlets;version="[2.1,3)",org.apache.slin
+ g.commons.osgi;version="[2.2,3)",org.apache.sling.models.annotations;ve
+ rsion="[1.0,2)",org.apache.sling.settings;version="[1.3,2)",org.osgi.se
+ rvice.event;version="[1.2,2)",org.slf4j;version="[1.5,2)"
+Provide-Capability: osgi.service;effective:=active;objectClass="javax.se
+ rvlet.Servlet";service.vendor=Adobe,osgi.service;effective:=active;obje
+ ctClass="org.anirudh.redquark.watchdog.core.AEMWatchFolder";service.ven
+ dor=Adobe,osgi.service;effective:=active;objectClass="java.lang.Runnabl
+ e";scheduler.expression="*/30 * * * * ?";scheduler.concurrent=false;ser
+ vice.vendor=Adobe,osgi.service;effective:=active;objectClass="javax.ser
+ vlet.Filter";service.ranking=-700;sling.filter.scope=REQUEST;service.ve
+ ndor=Adobe,osgi.service;effective:=active;objectClass="java.lang.Runnab
+ le";scheduler.expression="0 * * * * ?";service.vendor=Adobe,osgi.servic
+ e;effective:=active;objectClass="org.osgi.service.event.EventHandler";e
+ vent.topics="org/apache/sling/api/resource/Resource/*";service.vendor=A
+ dobe
+Require-Capability: osgi.service;effective:=active;filter:="(objectClass
+ =org.anirudh.redquark.watchdog.core.AEMWatchFolder)",osgi.service;effec
+ tive:=active;filter:="(objectClass=org.apache.sling.api.resource.Resour
+ ceResolverFactory)",osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Service-Component: OSGI-INF/org.anirudh.redquark.watchdog.core.scheduler
+ s.WatchedScheduler.xml,OSGI-INF/org.anirudh.redquark.watchdog.core.filt
+ ers.LoggingFilter.xml,OSGI-INF/org.anirudh.redquark.watchdog.core.sched
+ ulers.SimpleScheduledTask.xml,OSGI-INF/org.anirudh.redquark.watchdog.co
+ re.servlets.SimpleServlet.xml,OSGI-INF/org.anirudh.redquark.watchdog.co
+ re.listeners.SimpleResourceListener.xml,OSGI-INF/org.anirudh.redquark.w
+ atchdog.core.impl.AEMWatchFolderImpl.xml
+Sling-Model-Packages: org.anirudh.redquark.watchdog.core
+Tool: Bnd-2.3.0.201405100607
